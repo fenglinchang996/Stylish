@@ -1,0 +1,33 @@
+.order-complete {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-complete__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-width: 250px;
+  margin: 20px auto;
+  padding: 10px 0;
+  background-color: #e8e8e8;
+}
+
+.order-complete__note {
+  text-align: center;
+}
+
+/* Media Query*/
+
+@media (min-width: 768px) {
+  .order-complete__info {
+    width: 50%;
+    max-width: 700px;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./index.html?category=all">
+          <img class="logo" src="images/logo.png" />
+        </a>
+        <ul class="main-nav">
+          <li class="main-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+        <div class="search-start">
+          <img src="images/search.png" />
+        </div>
+        <div class="search">
+          <div class="search-bar">
+            <input class="search-bar__input" type="text" />
+            <button type="button" class="search-bar__btn">
+              <img class="search-bar__img" src="images/search.png" />
+            </button>
+          </div>
+          <div class="search-close">X</div>
+        </div>
+        <div class="cart">
+          <button type="button" class="cart__btn">
+            <a href="./cart.html"
+              ><img class="cart__img" src="images/cart.png" />
+              <div class="cart__product-qty">0</div>
+            </a>
+          </button>
+        </div>
+        <div class="member">
+          <button type="button" class="member__btn">
+            <img class="member__img" src="images/member.png" />
+          </button>
+        </div>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar__cart">
+          <button type="button" class="sidebar__cart__btn">
+            <a href="./cart.html">
+              <img class="sidebar__cart__img" src="images/cart-mobile.png" />
+              <div class="sidebar__cart__product-qty">0</div>
+              <span class="sidebar__cart__text">購物車</span>
+            </a>
+          </button>
+        </div>
+        <div class="vertical-separator">|</div>
+        <div class="sidebar__member">
+          <button type="button" class="sidebar__member__btn">
+            <img class="sidebar__member__img" src="images/member-mobile.png" />
+            <span class="sidebar__member__text">會員</span>
+          </button>
+        </div>
+      </div>
+      <div class="header-content-separator"></div>
+      <main class="main-content">
+        <h1 class="user-title">會員資訊</h1>
+        <hr />
+        <div class="user-profile">
+          <div class="user-picture"></div>
+          <div class="user-info">
+            <div class="user-name"></div>
+            <div class="user-email"></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__info__item"><a href="#">關於Stylish</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">服務條款</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">隱私政策</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">聯絡我們</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">FAQ</a></div>
+          </div>
+          <div class="footer__social-media">
+            <button type="button" class="line">
+              <img class="line__img" src="images/line.png" />
+            </button>
+            <button type="button" class="twitter">
+              <img class="twitter__img" src="images/twitter.png" />
+            </button>
+            <button type="button" class="facebook">
+              <img class="facebook__img" src="images/facebook.png" />
+            </button>
+          </div>
+          <div class="copyright">&copy;2018. All rights reserved.</div>
+        </div>
+      </footer>
+      <div class="blank"></div>
+    </div>
+    <script src="ajax.js"></script>
+    <script src="search.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="member.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

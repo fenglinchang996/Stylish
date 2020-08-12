@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./index.html?category=all">
+          <img class="logo" src="images/logo.png" />
+        </a>
+        <ul class="main-nav">
+          <li class="main-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+        <div class="search-start">
+          <img src="images/search.png" />
+        </div>
+        <div class="search">
+          <div class="search-bar">
+            <input class="search-bar__input" type="text" />
+            <button type="button" class="search-bar__btn">
+              <img class="search-bar__img" src="images/search.png" />
+            </button>
+          </div>
+          <div class="search-close">X</div>
+        </div>
+        <div class="cart">
+          <button type="button" class="cart__btn">
+            <a href="./cart.html">
+              <img class="cart__img" src="images/cart.png" />
+              <div class="cart__product-qty">0</div>
+            </a>
+          </button>
+        </div>
+        <div class="member">
+          <button type="button" class="member__btn">
+            <img class="member__img" src="images/member.png" />
+          </button>
+        </div>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar__cart">
+          <button type="button" class="sidebar__cart__btn">
+            <a href="./cart.html">
+              <img class="sidebar__cart__img" src="images/cart-mobile.png" />
+              <div class="sidebar__cart__product-qty">0</div>
+              <span class="sidebar__cart__text">購物車</span>
+            </a>
+          </button>
+        </div>
+        <div class="vertical-separator">|</div>
+        <div class="sidebar__member">
+          <button type="button" class="sidebar__member__btn">
+            <img class="sidebar__member__img" src="images/member-mobile.png" />
+            <span class="sidebar__member__text">會員</span>
+          </button>
+        </div>
+      </div>
+      <div class="header-content-separator"></div>
+      <main class="main-content">
+        <div class="product">
+          <div class="product__main-img"></div>
+          <div class="product__info">
+            <div class="product__title"></div>
+            <div class="product__id"></div>
+            <div class="product__price"></div>
+            <hr />
+            <div class="product__info__block">
+              <div class="product__colors__title">顏色</div>
+              <span class="vertical-separator">|</span>
+              <div class="product__colors">
+                <!-- <div
+                  class="product__colors__color product__colors__color--selected"
+                ></div>
+                <div class="product__colors__color"></div> -->
+              </div>
+            </div>
+            <div class="product__info__block">
+              <div class="product__sizes__title">尺寸</div>
+              <span class="vertical-separator">|</span>
+              <div class="product__sizes">
+                <!-- <div class="product__sizes__size">S</div>
+                <div
+                  class="product__sizes__size product__sizes__size--selected"
+                >
+                  M
+                </div>
+                <div class="product__sizes__size">L</div>
+                <div class="product__sizes__size">XL</div> -->
+              </div>
+            </div>
+            <div class="product__info__block">
+              <div class="product__qty__title">數量</div>
+              <span class="vertical-separator">|</span>
+              <div class="product__qty__count">
+                <button type="button" class="product__qty__count__dec">
+                  -
+                </button>
+                <div class="product__qty__count__number">1</div>
+                <button type="button" class="product__qty__count__inc">
+                  +
+                </button>
+              </div>
+            </div>
+            <button type="button" class="add-to-cart">加入購物車</button>
+            <div class="product__prop">
+              <p class="product__prop__note"></p>
+              <div class="product__prop__block">
+                <p class="product__prop__texture"></p>
+                <!-- <p class="product__prop__description">厚薄：薄</p>
+                <p class="product__prop__description">彈性：無</p> -->
+              </div>
+              <div class="product__prop__block">
+                <p class="product__prop__place"></p>
+                <p class="product__prop__wash"></p>
+              </div>
+            </div>
+          </div>
+          <div class="product__detail">
+            <div class="product__detail__title">
+              細部說明
+              <div class="horizontal-separator"></div>
+            </div>
+            <div class="product__detail__content">
+              <div class="product__detail__content__story"></div>
+              <!-- <img
+                class="product__detail__content__img"
+                src="images/main.jpg"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__info__item"><a href="#">關於Stylish</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">服務條款</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">隱私政策</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">聯絡我們</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">FAQ</a></div>
+          </div>
+          <div class="footer__social-media">
+            <button type="button" class="line">
+              <img class="line__img" src="images/line.png" />
+            </button>
+            <button type="button" class="twitter">
+              <img class="twitter__img" src="images/twitter.png" />
+            </button>
+            <button type="button" class="facebook">
+              <img class="facebook__img" src="images/facebook.png" />
+            </button>
+          </div>
+          <div class="copyright">&copy;2018. All rights reserved.</div>
+        </div>
+      </footer>
+      <div class="blank"></div>
+    </div>
+    <script src="ajax.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="search.js"></script>
+    <script src="member.js "></script>
+    <script src="product.js"></script>
+  </body>
+</html>

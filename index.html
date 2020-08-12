@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./index.html?category=all">
+          <img class="logo" src="images/logo.png" />
+        </a>
+        <ul class="main-nav">
+          <li class="main-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+        <div class="search-start">
+          <img src="images/search.png" />
+        </div>
+        <div class="search">
+          <div class="search-bar">
+            <input class="search-bar__input" type="text" />
+            <button type="button" class="search-bar__btn">
+              <img class="search-bar__img" src="images/search.png" />
+            </button>
+          </div>
+          <div class="search-close">X</div>
+        </div>
+        <div class="cart">
+          <button type="button" class="cart__btn">
+            <a href="./cart.html"
+              ><img class="cart__img" src="images/cart.png" />
+              <div class="cart__product-qty">0</div>
+            </a>
+          </button>
+        </div>
+        <div class="member">
+          <button type="button" class="member__btn">
+            <img class="member__img" src="images/member.png" />
+          </button>
+        </div>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar__cart">
+          <button type="button" class="sidebar__cart__btn">
+            <a href="./cart.html">
+              <img class="sidebar__cart__img" src="images/cart-mobile.png" />
+              <div class="sidebar__cart__product-qty">0</div>
+              <span class="sidebar__cart__text">購物車</span>
+            </a>
+          </button>
+        </div>
+        <div class="vertical-separator">|</div>
+        <div class="sidebar__member">
+          <button type="button" class="sidebar__member__btn">
+            <img class="sidebar__member__img" src="images/member-mobile.png" />
+            <span class="sidebar__member__text">會員</span>
+          </button>
+        </div>
+      </div>
+      <div class="header-content-separator"></div>
+      <div class="slide">
+        <!-- <div class="banner banner-special">
+          <img class="banner__img" src="images/201807242228.jpg" />
+          <blockquote class="banner__text">
+            <p class="banner__text__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="banner__text__paragraph">
+              Deserunt tempora velit nam fuga vero, optio quas et, ex minima
+              explicabo consequuntur.
+            </p>
+            <p class="banner__text__paragraph">
+              Sunt accusantium natus itaque numquam sequi necessitatibus tempore
+              quam.
+            </p>
+            <cite class="banner__text__cite">
+              This is a test.
+            </cite>
+          </blockquote>
+        </div>
+        <div class="banner-select">
+          <div class="banner-select__circle"></div>
+          <div class="banner-select__circle"></div>
+          <div class="banner-select__circle"></div>
+        </div> -->
+      </div>
+      <main class="main-content">
+        <div class="product-list">
+          <!-- <div class="product">
+            <img class="product__img" src="images/main.jpg" />
+            <div class="product__colors">
+              <div class="product__colors__color"></div>
+              <div class="product__colors__color"></div>
+            </div>
+            <div class="product__title">Title</div>
+            <div class="product__desc">Price</div>
+          </div> -->
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__info__item"><a href="#">關於Stylish</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">服務條款</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">隱私政策</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">聯絡我們</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">FAQ</a></div>
+          </div>
+          <div class="footer__social-media">
+            <button type="button" class="line">
+              <img class="line__img" src="images/line.png" />
+            </button>
+            <button type="button" class="twitter">
+              <img class="twitter__img" src="images/twitter.png" />
+            </button>
+            <button type="button" class="facebook">
+              <img class="facebook__img" src="images/facebook.png" />
+            </button>
+          </div>
+          <div class="copyright">&copy;2018. All rights reserved.</div>
+        </div>
+      </footer>
+      <div class="blank"></div>
+    </div>
+    <script src="ajax.js"></script>
+    <script src="search.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="member.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

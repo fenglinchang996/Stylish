@@ -1,0 +1,19 @@
+.user-title {
+  text-align: center;
+}
+
+.user-profile {
+  width: 85%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.user-picture {
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

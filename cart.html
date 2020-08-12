@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./index.html?category=all">
+          <img class="logo" src="images/logo.png" />
+        </a>
+        <ul class="main-nav">
+          <li class="main-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="main-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+        <div class="search-start">
+          <img src="images/search.png" />
+        </div>
+        <div class="search">
+          <div class="search-bar">
+            <input class="search-bar__input" type="text" />
+            <button type="button" class="search-bar__btn">
+              <img class="search-bar__img" src="images/search.png" />
+            </button>
+          </div>
+          <div class="search-close">X</div>
+        </div>
+        <div class="cart">
+          <button type="button" class="cart__btn">
+            <a href="./cart.html">
+              <img class="cart__img" src="images/cart.png" />
+              <div class="cart__product-qty">0</div>
+            </a>
+          </button>
+        </div>
+        <div class="member">
+          <button type="button" class="member__btn">
+            <img class="member__img" src="images/member.png" />
+          </button>
+        </div>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item women-category">
+            <a href="./index.html?category=women">女裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item men-category">
+            <a href="./index.html?category=men">男裝</a>
+          </li>
+          <span class="vertical-separator">|</span>
+          <li class="mobile-nav__item accessories-category">
+            <a href="./index.html?category=accessories">配件</a>
+          </li>
+        </ul>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar__cart">
+          <button type="button" class="sidebar__cart__btn">
+            <a href="./cart.html">
+              <img class="sidebar__cart__img" src="images/cart-mobile.png" />
+              <div class="sidebar__cart__product-qty">0</div>
+              <span class="sidebar__cart__text">購物車</span>
+            </a>
+          </button>
+        </div>
+        <div class="vertical-separator">|</div>
+        <div class="sidebar__member">
+          <button type="button" class="sidebar__member__btn">
+            <img class="sidebar__member__img" src="images/member-mobile.png" />
+            <span class="sidebar__member__text">會員</span>
+          </button>
+        </div>
+      </div>
+      <div class="header-content-separator"></div>
+      <main class="main-content">
+        <div class="shopping-cart">
+          <div class="shopping-cart__header">
+            <div class="shopping-cart__title">
+              購物車(<span class="shopping-cart__total-qty">0</span>)
+            </div>
+            <div class="shopping-cart__header__title">數量</div>
+            <div class="shopping-cart__header__title">單價</div>
+            <div class="shopping-cart__header__title">小計</div>
+            <div class="shopping-cart__header__delete-block"></div>
+          </div>
+          <hr class="shopping-cart__title-goods-sep" />
+          <div class="shopping-cart__goods">
+            購物車裡面沒有東西喔！
+            <!-- <div class="product">
+              <img class="product__main-img" src="images/main.jpg" />
+              <div class="product__info">
+                <div class="product__name">前開衩扭結洋裝</div>
+                <div class="product__id">03040047</div>
+                <div class="product__color">顏色 | 白</div>
+                <div class="product__size">尺寸 | M</div>
+              </div>
+              <button class="product__delete" type="button">
+                <img src="images/cart-remove.png" />
+              </button>
+              <div class="product__qty">
+                <div class="product__qty__title">數量</div>
+                <input
+                  class="product__qty__number"
+                  type="number"
+                  min="1"
+                  max="9"
+                />
+              </div>
+              <div class="product__price">
+                <div class="product__price__title">單價</div>
+                <div class="product__price__value">NT.590</div>
+              </div>
+              <div class="product__subtotal-price">
+                <div class="product__subtotal-price__title">小計</div>
+                <div class="product__subtotal-price__value">NT.590</div>
+              </div>
+            </div>
+            <hr class="product-sep" /> -->
+          </div>
+        </div>
+        <div class="order-delivery-payment">
+          <div class="order__delivery-location">
+            <label for="delivery-country">配送國家</label>
+            <select
+              id="delivery-country"
+              class="order__delivery-location__select"
+            >
+              <option value="delivery">台灣及離島</option>
+            </select>
+          </div>
+          <div class="order__payment-method">
+            <label for="payment-method">付款方式</label>
+            <select id="payment-method" class="order__payment-method__select">
+              <option value="credit_card">信用卡付款</option>
+            </select>
+          </div>
+        </div>
+        <div class="order-note">
+          <p>※提醒您：</p>
+          <p>● 請填寫正確收件人資訊，避免包裹配送不達</p>
+          <p>● 請填寫正確收件人姓名（與證件相符），避免無法領取</p>
+        </div>
+        <div class="order-info">
+          <div class="order-info__title">訂購資料</div>
+          <hr />
+          <div class="order-info__recipient">
+            <label for="name" class="order-info__recipient__title"
+              >收件人姓名</label
+            >
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="請輸入收件人姓名"
+              class="order-info__recipient__input"
+            />
+            <p class="order-info__recipient__note">
+              務必填寫完整收件人姓名，避免包裹無法順利簽收
+            </p>
+          </div>
+          <div class="order-info__phone">
+            <label for="phone" class="order-info__phone__title">手機</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              required
+              placeholder="請輸入手機號碼，例如：0912345678"
+              class="order-info__phone__input"
+            />
+          </div>
+          <div class="order-info__email">
+            <label for="email" class="order-info__email__title">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="請輸入E-mail，例如：asdf@gmail.com"
+              class="order-info__email__input"
+            />
+          </div>
+          <div class="order-info__address">
+            <label for="address" class="order-info__address__title">地址</label>
+            <input
+              id="address"
+              name="address"
+              type="text"
+              required
+              placeholder="請輸入地址"
+              class="order-info__address__input"
+            />
+          </div>
+          <div class="order-info__delivery-time">
+            <label for="delivery-time" class="order-info__delivery-time__title"
+              >配送時間</label
+            >
+            <div class="order-info__delivery-time__selection">
+              <div>
+                <input
+                  id="morning"
+                  type="radio"
+                  name="delivery-time"
+                  value="morning"
+                /><label for="morning">08:00-12:00</label>
+              </div>
+              <div>
+                <input
+                  id="afternoon"
+                  type="radio"
+                  name="delivery-time"
+                  value="afternoon"
+                /><label for="afternoon">14:00-18:00</label>
+              </div>
+              <div>
+                <input
+                  id="anytime"
+                  type="radio"
+                  name="delivery-time"
+                  checked
+                  value="anytime"
+                /><label for="anytime">不指定</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-payment-info">
+          <div class="order-payment-info__title">付款資訊</div>
+          <hr />
+          <div class="order-payment-info__card-number">
+            <div class="order-payment-info__label">卡號</div>
+            <div class="tpfield" id="card-number"></div>
+          </div>
+          <div class="order-payment-info__card-expiration-date">
+            <div class="order-payment-info__label">卡片到期日期</div>
+            <div class="tpfield" id="card-expiration-date"></div>
+          </div>
+          <div class="order-payment-info__card-ccv">
+            <div class="order-payment-info__label">卡片後三碼</div>
+            <div class="tpfield" id="card-ccv"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="order-price-freight">
+          <div class="order__subtotal-price">
+            <div>總金額</div>
+            <div class="order__subtotal-price__value">NT. 1770</div>
+          </div>
+          <div class="order__freight">
+            <div>運費</div>
+            <div class="order__freight__value">NT. 30</div>
+          </div>
+          <hr />
+          <div class="order__estimate-total-price">
+            <div>應付金額</div>
+            <div class="order__estimate-total-price__value">NT. 1800</div>
+          </div>
+        </div>
+        <button type="button" class="confirm-payment">確認付款</button>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__info__item"><a href="#">關於Stylish</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">服務條款</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">隱私政策</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">聯絡我們</a></div>
+            <span class="vertical-separator">|</span>
+            <div class="footer__info__item"><a href="#">FAQ</a></div>
+          </div>
+          <div class="footer__social-media">
+            <button type="button" class="line">
+              <img class="line__img" src="images/line.png" />
+            </button>
+            <button type="button" class="twitter">
+              <img class="twitter__img" src="images/twitter.png" />
+            </button>
+            <button type="button" class="facebook">
+              <img class="facebook__img" src="images/facebook.png" />
+            </button>
+          </div>
+          <div class="copyright">&copy;2018. All rights reserved.</div>
+        </div>
+      </footer>
+      <div class="blank"></div>
+    </div>
+    <script src="ajax.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="search.js"></script>
+    <script src="member.js"></script>
+    <script src="cart.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v4"></script>
+    <script src="TPSetup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+.main-content {
+  width: 85%;
+  margin: auto;
+}
+
+.shopping-cart {
+  margin-top: 20px;
+}
+
+.shopping-cart__title {
+  font-weight: bold;
+}
+
+.shopping-cart__header__title {
+  display: none;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.product__main-img {
+  width: 35%;
+}
+
+.product__info {
+  width: 47.5%;
+  margin-left: 20px;
+}
+
+.product__id {
+  margin: 10px 0;
+}
+
+.product__color,
+.product__size {
+  margin: 3px 0;
+}
+
+.product__delete {
+  width: 7.5%;
+  align-self: flex-start;
+}
+
+.product__delete img {
+  position: relative; /* This might cause it stack over fixed element */
+  right: 11px;
+}
+
+.product__qty,
+.product__price,
+.product__subtotal-price {
+  width: 30%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.product__qty__number,
+.product__price__value,
+.product__subtotal-price__value {
+  margin: 10px 0 0 0;
+}
+
+.product__qty__number {
+  width: 60px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.order-delivery-payment {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #e8e8e8;
+}
+
+.order__delivery-location,
+.order__payment-method {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.order__delivery-location__select,
+.order__payment-method__select {
+  width: 100%;
+  padding: 3px 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: solid 1px #979797;
+  background-color: #f3f3f3;
+  font-size: 1rem;
+}
+
+.order-note {
+  margin: 15px 0;
+}
+
+.order-info {
+  margin: 20px 0;
+}
+
+.order-info__title {
+  font-weight: bold;
+}
+
+.order-info__recipient,
+.order-info__phone,
+.order-info__email,
+.order-info__address,
+.order-info__delivery-time {
+  margin: 20px 0;
+}
+
+.order-info__recipient__input,
+.order-info__phone__input,
+.order-info__email__input,
+.order-info__address__input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: solid 1px #979797;
+  font-size: 1rem;
+}
+
+.order-info__recipient__note {
+  color: #8b572a;
+}
+
+.order-info__delivery-time__selection {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-payment-info {
+  margin: 30px 0 30px 0;
+}
+
+.order-payment-info__title {
+  font-weight: bold;
+}
+
+.order-payment-info__card-number,
+.order-payment-info__card-expiration-date,
+.order-payment-info__card-ccv {
+  margin: 20px 0;
+}
+
+.tpfield {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.order-price-freight {
+  width: 200px;
+  margin: 20px 0 20px auto;
+}
+
+.order__subtotal-price,
+.order__freight,
+.order__estimate-total-price {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__subtotal-price__value,
+.order__freight__value,
+.order__estimate-total-price__value {
+  font-size: 1.4rem;
+}
+
+.confirm-payment {
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000000;
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .main-content {
+    max-width: 1200px;
+  }
+
+  .shopping-cart__header {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .shopping-cart__title {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .shopping-cart__header__title {
+    display: block;
+    text-align: center;
+    width: 17.5%;
+  }
+
+  .shopping-cart__header__delete-block {
+    width: 7.5%;
+  }
+
+  .shopping-cart__title-goods-sep {
+    display: none;
+  }
+
+  .shopping-cart__goods {
+    border: solid 1px #979797;
+    padding: 20px;
+    margin: 15px 0;
+  }
+
+  .product-sep {
+    display: none;
+  }
+
+  .product {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .product__main-img {
+    width: 15%;
+  }
+
+  .product__info {
+    width: 25%;
+    align-self: flex-start;
+  }
+
+  .product__qty,
+  .product__price,
+  .product__subtotal-price {
+    width: 17.5%;
+  }
+
+  .product__qty__number,
+  .product__price__value,
+  .product__subtotal-price__value {
+    margin: 0;
+  }
+
+  .product__delete {
+    order: 1;
+    align-self: center;
+  }
+  .product__delete img {
+    position: static;
+  }
+
+  .product__qty__title,
+  .product__price__title,
+  .product__subtotal-price__title {
+    display: none;
+  }
+
+  .order-delivery-payment {
+    flex-wrap: nowrap;
+  }
+
+  .order__delivery-location,
+  .order__payment-method {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .order__delivery-location__title,
+  .order__payment-method__title {
+    width: 30%;
+  }
+
+  .order__delivery-location__select,
+  .order__payment-method__select {
+    margin: 0;
+    width: 60%;
+  }
+
+  .order-info__recipient,
+  .order-info__phone,
+  .order-info__email,
+  .order-info__address,
+  .order-info__delivery-time {
+    display: flex;
+    width: 70%;
+    align-items: center;
+  }
+
+  .order-info__recipient {
+    flex-wrap: wrap;
+  }
+
+  .order-info__recipient__note {
+    margin-left: auto;
+  }
+
+  .order-info__recipient__title,
+  .order-info__phone__title,
+  .order-info__email__title,
+  .order-info__address__title,
+  .order-info__delivery-time__title {
+    width: 30%;
+  }
+
+  .order-info__recipient__input,
+  .order-info__phone__input,
+  .order-info__email__input,
+  .order-info__address__input,
+  .order-info__delivery-time__selection {
+    margin-top: 0;
+    width: 70%;
+  }
+
+  .order-payment-info__card-number,
+  .order-payment-info__card-expiration-date,
+  .order-payment-info__card-ccv {
+    display: flex;
+    width: 70%;
+    align-items: center;
+  }
+
+  .order-payment-info__label {
+    width: 30%;
+  }
+
+  .tpfield {
+    margin: 0;
+    width: 70%;
+  }
+
+  .confirm-payment {
+    width: 200px;
+    display: block; /* change display to bloc for margin auto to applied */
+    margin: 0 0 0 auto;
+  }
+}
