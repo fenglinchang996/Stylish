@@ -8,9 +8,7 @@ const subTotalPrice = document.querySelector(".order__subtotal-price__value");
 const freight = document.querySelector(".order__freight__value");
 
 // get total price element
-const totalPrice = document.querySelector(
-  ".order__estimate-total-price__value"
-);
+const totalPrice = document.querySelector(".order__estimate-total-price__value");
 
 renderCartProductList(getCartProductList());
 renderTotalQtyAndPrice(getOrder());
@@ -123,10 +121,7 @@ function createCartProduct(cartProduct) {
     cartProduct.price * cartProduct.qty
   }`;
 
-  productSubtotalPrice.append(
-    productSubtotalPriceTitle,
-    productSubtotalPriceValue
-  );
+  productSubtotalPrice.append(productSubtotalPriceTitle, productSubtotalPriceValue);
 
   product.append(
     productMainImg,
@@ -180,8 +175,7 @@ function getRecipientInfoFromUser() {
   const phone = document.querySelector("input#phone").value;
   const email = document.querySelector("input#email").value;
   const address = document.querySelector("input#address").value;
-  const time = document.querySelector('input[name="delivery-time"]:checked')
-    .value;
+  const time = document.querySelector('input[name="delivery-time"]:checked').value;
 
   return {
     name,
@@ -259,22 +253,12 @@ confirmPaymentBtn.addEventListener("click", () => {
   }
 
   TPDirect.card.getPrime((result) => {
-    loadFullPage();
     const prime = result.card.prime;
     const order = getOrder();
-    const checkoutData = { prime, order };
 
-    fbcheckLoginStatus(
-      (authResponse) => {
-        userFBSignin(authResponse.accessToken, (response) => {
-          const accessToken = response.data.access_token;
-          checkout(checkoutData, accessToken);
-        });
-      },
-      () => {
-        checkout(checkoutData);
-      }
-    );
+    alert("購物成功");
+    removeOrder();
+    window.location = "./thankyou.html";
   });
 });
 
@@ -301,8 +285,7 @@ const verifyEmail = (emailInputValue) =>
     /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
   );
 
-const verifyPhone = (phoneInputValue) =>
-  phoneInputValue.match(/\b09[0-9]{8}\b/);
+const verifyPhone = (phoneInputValue) => phoneInputValue.match(/\b09[0-9]{8}\b/);
 
 function verifyUserInput() {
   const emailInput = document.querySelector("#email");
