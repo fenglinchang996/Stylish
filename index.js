@@ -173,7 +173,7 @@ function renderMarketingCampaigns(marketingCampaigns) {
     bannerText.className = "banner__text";
 
     banner.id = marketingCampaign.id;
-    bannerImg.src = `https://api.appworks-school.tw/${marketingCampaign.picture}`;
+    bannerImg.src = marketingCampaign.picture;
 
     const story = marketingCampaign.story.split("\r\n");
     story.forEach((text, index) => {
